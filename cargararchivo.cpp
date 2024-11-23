@@ -20,7 +20,7 @@ void load_script(const char* filename, bool show_script = false) {
         std::cout << content << std::endl;
     }
 
-    // Simulación de cargar el script (aquí puedes integrar lógica adicional si es necesario)
+    // Simulación de cargar el script
     std::cout << "El script se ha cargado correctamente en memoria." << std::endl;
 }
 
