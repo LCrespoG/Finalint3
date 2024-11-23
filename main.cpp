@@ -1,7 +1,7 @@
-#include <iostream>
+#include "cargararchivo.h"
 
-int main()
-{
-    std::cout << "Hello, World!" << std::endl;
+int main() {
+    // Prueba interactiva
+    load_script();
     return 0;
 }
