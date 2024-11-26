@@ -74,51 +74,67 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
 Correción de código a Jun Xu Cheng
 
 ## Correcion precisa:
+
 Carga de scripts (50 puntos)
 load_script(const char* filename, bool show_script = false) (25 puntos):
-Errores:
+
+**Errores:**
 
 No verifica si el tamaño total del archivo excede los límites de la memoria al construir script. Esto puede causar un desbordamiento si se leen archivos grandes.
 Usa una función obsoleta como fopen, que puede reemplazarse con alternativas modernas más seguras (std::ifstream).
 El manejo de cadenas con char buf[4001] es propenso a errores. Es mejor usar clases de C++ como std::vector<char> para gestionar buffers dinámicamente.
-Corrección sugerida:
+
+**Corrección sugerida:**
 
 Utilizar std::ifstream en lugar de fopen para mayor claridad y seguridad.
 Agregar un límite explícito para el tamaño del archivo cargado.
+
 load_script() (25 puntos):
-Errores:
+
+**Errores:**
 
 Usa scanf, que puede ser reemplazado por std::cin para evitar problemas de formato o sobrelectura.
 Falta manejo de entradas inválidas del usuario, como rutas vacías o nombres de archivo con caracteres no permitidos.
-Corrección sugerida:
+
+**Corrección sugerida:**
 
 Cambiar scanf por std::getline con validaciones adicionales para el formato del archivo.
+
 Manejo de errores (50 puntos)
 Nombre del archivo no existe (15 puntos):
-Errores:
+
+**Errores:**
 
 Solo imprime un mensaje de error en caso de fallo al abrir el archivo, pero no proporciona detalles adicionales (como errno o la descripción del error).
-Corrección sugerida:
+
+**Corrección sugerida:**
 
 Usar std::cerr con información detallada del error (strerror(errno)).
 Archivo no se puede abrir (15 puntos):
-Errores:
+
+**Errores:**
 
 El manejo de errores en fopen es adecuado, pero puede mejorarse con un mensaje más descriptivo.
-Corrección sugerida:
+
+**Corrección sugerida:**
 
 Imprimir un mensaje más claro que incluya posibles causas del problema, como permisos insuficientes o archivo inexistente.
 Error durante la lectura del archivo (20 puntos):
-Errores:
+
+**Errores:**
 
 El catch (...) es demasiado genérico y no informa del tipo de error que ocurrió.
 No se limpia completamente el estado de consoleBox en caso de errores.
-Corrección sugerida:
+
+**Corrección sugerida:**
 
 Usar excepciones específicas (std::ios_base::failure) y añadir limpieza explícita de recursos.
 Código Corregido
+
+## Código corregido:
+
 main.cpp
-cpp
+```cpp
 Copiar código
 #include "EJ1/Ejercicio.h"
 
@@ -127,6 +143,7 @@ int main()
     load_script();
     return 0;
 }
+```
 ejercicio.cpp
 ```cpp
 Copiar código
@@ -207,6 +224,7 @@ void load_script()
 
     load_script(filename.c_str(), true);
 }
-ejercicio.h
 ```
+ejercicio.h
+
 Sin cambios significativos, pero se actualiza la firma de las funciones y se mantiene la declaración estructurada.
