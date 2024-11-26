@@ -89,6 +89,8 @@ El manejo de cadenas con char buf[4001] es propenso a errores. Es mejor usar cla
 Utilizar std::ifstream en lugar de fopen para mayor claridad y seguridad.
 Agregar un límite explícito para el tamaño del archivo cargado.
 
+---
+
 ### **load_script() (25 puntos):**
 
 - **Errores:**
@@ -100,6 +102,8 @@ Falta manejo de entradas inválidas del usuario, como rutas vacías o nombres de
 
 Cambiar scanf por std::getline con validaciones adicionales para el formato del archivo.
 
+---
+
 ### **Manejo de errores (50 puntos)**
 ### **Nombre del archivo no existe (15 puntos):**
 
@@ -110,6 +114,9 @@ Solo imprime un mensaje de error en caso de fallo al abrir el archivo, pero no p
 - **Corrección sugerida:**
 
 Usar std::cerr con información detallada del error (strerror(errno)).
+
+---
+
 ### **Archivo no se puede abrir (15 puntos):**
 
 - **Errores:**
@@ -119,6 +126,9 @@ El manejo de errores en fopen es adecuado, pero puede mejorarse con un mensaje m
 - **Corrección sugerida:**
 
 Imprimir un mensaje más claro que incluya posibles causas del problema, como permisos insuficientes o archivo inexistente.
+
+---
+
 ### **Error durante la lectura del archivo (20 puntos):**
 
 - **Errores:**
