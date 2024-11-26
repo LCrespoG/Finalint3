@@ -119,7 +119,7 @@ El manejo de errores en fopen es adecuado, pero puede mejorarse con un mensaje m
 **Corrección sugerida:**
 
 Imprimir un mensaje más claro que incluya posibles causas del problema, como permisos insuficientes o archivo inexistente.
-Error durante la lectura del archivo (20 puntos):
+- Error durante la lectura del archivo (20 puntos):
 
 **Errores:**
 
@@ -129,7 +129,6 @@ No se limpia completamente el estado de consoleBox en caso de errores.
 **Corrección sugerida:**
 
 Usar excepciones específicas (std::ios_base::failure) y añadir limpieza explícita de recursos.
-Código Corregido
 
 ## Código corregido:
 
