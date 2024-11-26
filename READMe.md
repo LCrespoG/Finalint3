@@ -128,7 +128,7 @@ int main()
     return 0;
 }
 ejercicio.cpp
-cpp
+```cpp
 Copiar código
 #include <iostream>
 #include <string>
@@ -208,9 +208,5 @@ void load_script()
     load_script(filename.c_str(), true);
 }
 ejercicio.h
+```
 Sin cambios significativos, pero se actualiza la firma de las funciones y se mantiene la declaración estructurada.
-
-Puntaje según la Rúbrica
-Carga de scripts: 50/50. Implementación robusta y segura, con manejo correcto de cadenas y buffers.
-Manejo de errores: 50/50. Cobertura completa de casos de error, incluyendo mensajes detallados y manejo de excepciones.
-Total: 100/100.
