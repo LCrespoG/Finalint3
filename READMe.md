@@ -74,3 +74,6 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
   - "Error: El nombre del archivo no puede estar vacío."
 
 ---
+
+## **Correción**:
+Corrijo a Jun Xu Cheng
