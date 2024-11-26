@@ -88,7 +88,7 @@ int main()
     return 0;
 }
 ```
-ejercicio.h
+```ejercicio.h
 Cambiado #ifndef por #pragma once para simplificar las guardas.
 Definiciones de ColorConsole actualizadas para ser consistentes.
 cpp
