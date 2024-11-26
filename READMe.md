@@ -76,7 +76,7 @@ Correción de código a Jun Xu Cheng
 ## Correcion precisa:
 
 ### **Carga de scripts (50 puntos)**
-### **load_script(const char filename, bool show_script = false) (25 puntos):**
+#### **Uso de load_script(const char filename, bool show_script = false) (25 puntos):**
 
 - **Errores:**
 
@@ -91,7 +91,7 @@ Agregar un límite explícito para el tamaño del archivo cargado.
 
 ---
 
-### **load_script() (25 puntos):**
+#### **Uso de load_script() (25 puntos):**
 
 - **Errores:**
 
@@ -105,7 +105,7 @@ Cambiar scanf por std::getline con validaciones adicionales para el formato del 
 ---
 
 ### **Manejo de errores (50 puntos)**
-### **Nombre del archivo no existe (15 puntos):**
+#### **Nombre del archivo no existe (15 puntos):**
 
 - **Errores:**
 
@@ -117,7 +117,7 @@ Usar std::cerr con información detallada del error (strerror(errno)).
 
 ---
 
-### **Archivo no se puede abrir (15 puntos):**
+#### **Archivo no se puede abrir (15 puntos):**
 
 - **Errores:**
 
@@ -129,7 +129,7 @@ Imprimir un mensaje más claro que incluya posibles causas del problema, como pe
 
 ---
 
-### **Error durante la lectura del archivo (20 puntos):**
+#### **Error durante la lectura del archivo (20 puntos):**
 
 - **Errores:**
 
