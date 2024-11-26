@@ -76,4 +76,4 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
 ---
 
 ## **Correción**:
-Corrijo a Jun Xu Cheng
+Correción de código a Jun Xu Cheng
