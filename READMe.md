@@ -77,3 +77,5 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
 
 ## **Correción**:
 Correción de código a Jun Xu Cheng
+
+# Correcion precisa:
