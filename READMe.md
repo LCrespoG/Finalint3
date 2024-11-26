@@ -75,8 +75,8 @@ Correción de código a Jun Xu Cheng
 
 ## Correcion precisa:
 
-**Carga de scripts (50 puntos)**
-**load_script(const char* filename, bool show_script = false) (25 puntos):**
+### **Carga de scripts (50 puntos)**
+### **load_script(const char* filename, bool show_script = false) (25 puntos):**
 
 - **Errores:**
 
