@@ -87,6 +87,7 @@ int main()
     load_script();
     return 0;
 }
+```
 ejercicio.h
 Cambiado #ifndef por #pragma once para simplificar las guardas.
 Definiciones de ColorConsole actualizadas para ser consistentes.
@@ -116,12 +117,14 @@ extern ConsoleBox consoleBox;
 // Funciones para cargar scripts
 void load_script(const char* filename, bool show_script = false);
 void load_script();
+```
 ejercicio.cpp
 Uso de std::ifstream en lugar de FILE*.
 Eliminado el puntero dinámico para consoleBox, ahora es una instancia estática.
 Uso de std::string en lugar de scanf para leer el nombre del archivo.
 Añadida inicialización correcta para ColorConsole.
-cpp
+
+```cpp
 Copiar código
 #include <iostream>
 #include <fstream>
@@ -163,3 +166,4 @@ void load_script()
     std::cin >> filename;
     load_script(filename.c_str(), true);
 }
+```
