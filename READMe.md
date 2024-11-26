@@ -7,7 +7,6 @@ https://github.com/LCrespoG/Finalint3.git
 
 Este programa está diseñado para cargar archivos de texto desde el sistema de archivos y, opcionalmente, mostrar su contenido en la consola. Ofrece dos funciones principales para interactuar con los archivos: una que permite especificar el nombre del archivo directamente y otra que solicita al usuario que introduzca el nombre del archivo de forma interactiva.
 
----
 
 ## **Características**
 
@@ -29,7 +28,6 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
      - Problemas al abrir el archivo (por ejemplo, falta de permisos).
      - Errores durante la lectura del contenido.
 
----
 
 ## **Flujo de Uso**
 
@@ -49,7 +47,6 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
 5. **Finalización**:
    - Muestra un mensaje de confirmación indicando que el archivo se ha cargado correctamente en memoria.
 
----
 
 ## **Casos de Uso**
 
@@ -62,7 +59,6 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
 3. **Manejo Básico de Archivos**:
    - Una forma simple y práctica de interactuar con archivos de texto desde la consola.
 
----
 
 ## **Mensajes Clave del Programa**
 
@@ -73,7 +69,6 @@ Este programa está diseñado para cargar archivos de texto desde el sistema de 
 - **Error de Entrada Vacía**:
   - "Error: El nombre del archivo no puede estar vacío."
 
----
 
 # **Correción**:
 Correción de código a Jun Xu Cheng
